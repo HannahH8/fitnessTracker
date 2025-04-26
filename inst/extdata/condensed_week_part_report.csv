@@ -1,0 +1,3 @@
+part_of_week,avg_steps,avg_intensities,avg_calories
+Weekday,7986.0,300.0,2421.0
+Weekend,7182.0,271.0,2204.0

@@ -1,0 +1,8 @@
+day_of_week,avg_steps,avg_intensities,avg_calories
+Monday,7208.0,271.0,2170.0
+Tuesday,9125.0,340.0,2690.0
+Wednesday,8469.0,316.0,2603.0
+Thursday,8008.0,297.0,2413.0
+Friday,7119.0,276.0,2230.0
+Sunday,6522.0,249.0,2134.0
+Saturday,7843.0,294.0,2274.0
