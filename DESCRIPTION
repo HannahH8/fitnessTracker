@@ -1,16 +1,16 @@
 Package: fitnessTracker
 Type: Package
-Title: What the Package Does (Title Case)
+Title: Tools for Analyzing and Visualizing Health and Fitness
 Version: 0.1.0
 Authors@R: c(
     person(
-      "Jane", "Doe",
-      email = "jane@example.com",
+      "Hannah", "Hillery",
+      email = "hannah.hillery1@yahoo.com",
       role = c("aut", "cre")
     )
   )
-Description: More about what it does (maybe more than one line).
-    Continuation lines should be indented.
-License: What license is it under?
+Description: This package contains tools for analysing and visualizing health and fitness data from fitbit or apple watches. Functions help with summarizing step counts, sleep, calories, etc.
+License: GPL-3
 Encoding: UTF-8
 LazyData: true
+Imports: ggplot2, dplyr
