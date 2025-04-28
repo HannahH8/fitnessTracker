@@ -27,3 +27,19 @@ clean_weight <- function(data, kg_column, weight_column) {
 clean_BMI <- function(BMI_column) {
   return(round(BMI_column, 2))
 }
+#' Intensity levels
+#'
+#' @param dataset dataset being modified
+#' @param numeric_vector numeric column of activity levels
+#' @return updates dataset with categorical levels of activitity based off numeric column
+#'
+intensity_level <- function(dataset,column) {
+  values <- dataset[[column]]
+  breaks <- c(-Inf, (median(values) - sd(values)),
+              (median(values) + sd(values)), Inf)
+  labels <- c("Low", "Medium", "High")
+  categorized_values <- cut(values, breaks = breaks, labels = labels)
+  categorized_values <- as.character(categorized_values)
+  dataset$intensity_level <- categorized_values
+  return(dataset)
+}

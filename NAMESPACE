@@ -3,3 +3,8 @@ exportPattern("^[[:alpha:]]+")
 export(clean_distance)
 export(clean_weight)
 export(clean_BMI)
+export(intensity_level)
+export(BMR)
+export(TDEE)
+export(sleep_efficiency)
+
