@@ -9,8 +9,14 @@ Authors@R: c(
       role = c("aut", "cre")
     )
   )
-Description: This package contains tools for analysing and visualizing health and fitness data from fitbit or apple watches. Functions help with summarizing step counts, sleep, calories, etc.
+Description: This package contains tools for analysing and visualizing health and fitness data from fitbit or apple watches. 
+  The package comes with a sets of data that range in categories from sleep, activity, and weight health. Functions in this package
+  include viusalization tools to show trends in activity types and levels, along with sleep and weight changes. This package also includes
+  functions to analyze health calculations, trends, and summarize the data.
 License: GPL-3
 Encoding: UTF-8
 LazyData: true
-Imports: ggplot2, dplyr
+Imports:
+  ggplot2,
+  dplyr (>= 1.0.0)
+RoxygenNote: 7.3.2

@@ -1,1 +1,5 @@
 exportPattern("^[[:alpha:]]+")
+
+export(clean_distance)
+export(clean_weight)
+export(clean_BMI)
