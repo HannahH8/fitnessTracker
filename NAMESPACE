@@ -7,4 +7,7 @@ export(intensity_level)
 export(BMR)
 export(TDEE)
 export(sleep_efficiency)
-
+export(water_intake)
+export(steps_plot)
+export(sleep_plot)
+export(intensity_plot)
