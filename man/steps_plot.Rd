@@ -22,4 +22,5 @@ Step Visualization
 \examples{
 # Plot steps
 steps_plot(dailyActivity, "ActivityDate", "TotalSteps")
+
 }

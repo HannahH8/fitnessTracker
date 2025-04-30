@@ -7,6 +7,9 @@
 #' @examples
 #' # Plot steps
 #' steps_plot(dailyActivity, "ActivityDate", "TotalSteps")
+#'
+#' @importFrom ggplot2 ggplot aes geom_line labs
+#' @importFrom ggthemes theme_economist scale_fill_economist
 #' @export
 steps_plot <- function(data, date, steps) {
   steps <- ggplot(data, aes(x= as.Date(.data[[date]]), y= .data[[steps]])) +

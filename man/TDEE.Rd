@@ -9,7 +9,7 @@ TDEE(weight, intensity_level)
 \arguments{
 \item{weight}{weight in pounds}
 
-\item{intensity}{character/category of intensity level}
+\item{intensity_level}{character/category of intensity level}
 }
 \value{
 TDEE calvulation

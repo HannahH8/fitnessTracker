@@ -3,6 +3,8 @@
 #' clean_distance - rounds the distance to the hundreths place
 #' @param distance_column cleans distance column by rounding
 #' @return cleaned distance column
+#' @importFrom stats median sd
+#' @importFrom rlang .data
 #' @export
 #'
 clean_distance <- function(distance_column) {
@@ -13,6 +15,8 @@ clean_distance <- function(distance_column) {
 #' @param kg_column kg column to be removed
 #' @param weight_column weight column
 #' @return cleaned weight column
+#' @importFrom stats median sd
+#' @importFrom rlang .data
 #' @export
 clean_weight <- function(data, kg_column, weight_column) {
   data[[weight_column]] <- round(data[[weight_column]], 2)
@@ -23,6 +27,8 @@ clean_weight <- function(data, kg_column, weight_column) {
 #' clean_BMI - rounds weight to the hundreths place and removes kg columns
 #' @param BMI_column BMI column
 #' @return cleaned BMI column
+#' @importFrom stats median sd
+#' @importFrom rlang .data
 #' @export
 clean_BMI <- function(BMI_column) {
   return(round(BMI_column, 2))
@@ -30,9 +36,11 @@ clean_BMI <- function(BMI_column) {
 #' Intensity levels
 #'
 #' @param dataset dataset being modified
-#' @param numeric_vector numeric column of activity levels
+#' @param column numeric column of activity levels
 #' @return updates dataset with categorical levels of activitity based off numeric column
-#'
+#' @importFrom stats median sd
+#' @importFrom rlang .data
+#' @export
 intensity_level <- function(dataset,column) {
   values <- dataset[[column]]
   breaks <- c(-Inf, (median(values) - sd(values)),

@@ -26,4 +26,5 @@ Steps vs. Calories Plot
 \examples{
 # Steps vs. Calories Plot
 steps_vs_calories(dailyActivity, "TotalSteps", "Calories")
+
 }

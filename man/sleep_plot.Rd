@@ -26,4 +26,5 @@ Sleep visual plot
 \examples{
 # Plot sleep
 sleep_plot(dailySleep, "SleepDate", "TotalTimeInBed", "TotalMinutesAsleep", "TotalSleepRecords")
+
 }

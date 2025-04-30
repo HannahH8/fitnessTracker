@@ -1,7 +1,7 @@
 #' Total Daily Energy Expenditure
 #'
 #' @param weight weight in pounds
-#' @param intensity character/category of intensity level
+#' @param intensity_level character/category of intensity level
 #' @return TDEE calvulation
 #' @examples
 #' # TDEE Plot

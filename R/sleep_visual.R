@@ -9,6 +9,8 @@
 #' @examples
 #' # Plot sleep
 #' sleep_plot(dailySleep, "SleepDate", "TotalTimeInBed", "TotalMinutesAsleep", "TotalSleepRecords")
+#'
+#' @importFrom ggplot2 ggplot aes geom_point labs theme element_text
 #' @export
 
 sleep_plot <- function(data, date, timeInBed, TimeAsleep, sleepRecorded){

@@ -20,6 +20,7 @@ Imports:
   ggplot2,
   ggthemes,
   ggridges,
+  rlang,
   dplyr (>= 1.0.0)
 RoxygenNote: 7.3.2
 Suggests: 

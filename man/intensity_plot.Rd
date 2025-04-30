@@ -14,7 +14,7 @@ intensity_plot(data, date, intensities, intensity_levels)
 
 \item{intensities}{datasets intensity values}
 
-\item{intensity_level}{datasets intensity levels}
+\item{intensity_levels}{datasets intensity levels}
 }
 \value{
 returns intensity plot
@@ -26,4 +26,5 @@ This plot function is intended for medium - smaller sets of data
 \examples{
 # Plot Intensity
 intensity_plot(dailyActivity, "ActivityDate", "DailyIntensity", "intensity_level")
+
 }

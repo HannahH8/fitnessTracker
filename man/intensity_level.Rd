@@ -9,7 +9,7 @@ intensity_level(dataset, column)
 \arguments{
 \item{dataset}{dataset being modified}
 
-\item{numeric_vector}{numeric column of activity levels}
+\item{column}{numeric column of activity levels}
 }
 \value{
 updates dataset with categorical levels of activitity based off numeric column

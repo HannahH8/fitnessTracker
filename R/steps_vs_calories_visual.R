@@ -9,8 +9,11 @@
 #' @examples
 #' # Steps vs. Calories Plot
 #' steps_vs_calories(dailyActivity, "TotalSteps", "Calories")
-#' @export
 #'
+#' @importFrom rlang .data
+#' @importFrom ggplot2 ggplot aes geom_point
+#' @importFrom ggplot2 ggplot aes geom_point scale_size
+#' @export
 steps_vs_calories <- function(data, steps, calories, intensity= NA, active_time= NA) {
   p <- ggplot(data, aes(x= .data[[steps]], y= .data[[calories]]))
 
