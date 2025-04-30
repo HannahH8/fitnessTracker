@@ -13,7 +13,7 @@ Description: This package contains tools for analysing and visualizing health an
   The package comes with a sets of data that range in categories from sleep, activity, and weight health. Functions in this package
   include viusalization tools to show trends in activity types and levels, along with sleep and weight changes. This package also includes
   functions to analyze health calculations, trends, and summarize the data.
-License: GPL-3
+License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 Imports:
@@ -25,5 +25,7 @@ Imports:
 RoxygenNote: 7.3.2
 Suggests: 
     knitr,
-    rmarkdown
+    rmarkdown,
+    testthat (>= 3.0.0)
 VignetteBuilder: knitr
+Config/testthat/edition: 3
