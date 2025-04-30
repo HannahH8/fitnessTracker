@@ -1,0 +1,84 @@
+---
+title: "functions"
+output: html_document
+---
+
+# fitnessTracker Functions
+
+## package_file()
+description: displays raw files included in this package for user knowledge
+Returns:
+list of of raw files included in package
+
+## BMR()
+description: calculates the Basal Metabolic Rate of a person based off their weight
+Parameters:
+pounds - weight in pounds
+Returns:
+BMR calculation
+
+## TDEE()
+description: calculates Total Daily Energy Expenditure based on weight and activity intensity level
+Parameters:
+pounds - weight in pounds
+intensity - level of activity intensity (Low, Medium, High)
+Returns: 
+TDEE calculation
+
+## sleep_efficiency()
+description: calculates sleep effciency
+Parameters:
+minutesAsleep - total minutes asleep
+timeInBed - total time in bed
+Returns:
+sleep effciency calculation
+
+## water_intake()
+description: calculates recommended water intake for activities in ounces
+Parameters:
+weight - weight in pounds
+activityIntensity - level of activity intensity (Low, Medium, High)
+Return:
+returns recommended water intake calculation
+
+## steps_vs_calories()
+description: shows relationship between steps and calories burned
+Parameter:
+data - dataset
+steps - steps
+calories - calories burned
+intensity - optional: intensity of activity
+active_time - optional: total time of activity
+Return:
+plot visualization
+
+## steps_plot()
+description: Step Visualization
+Parameter:
+data - dataset
+date - date of steps taken
+steps - total steps taken
+Return:
+Steps plot
+
+## sleep_plot()
+description: Step Visualization
+Parameter:
+data - dataset
+date - date of steps taken
+timeInBed - total time in bed
+TimeAsleep - total time asleep
+sleepRecorded - number of times went to sleep
+Return:
+Sleep plot
+
+## intensity_plot()
+description: Activity Intensity Visual Plot
+Parameter:
+data - dataset
+date - date of activities taken
+intensities: datasets intensity values
+intensity_level: datasets intensity levels
+
+
+

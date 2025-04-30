@@ -1,0 +1,124 @@
+---
+title: "package-vignette"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{package-vignette}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+Package Purpose:
+The purpose of this package is to provide tools,functions, and visualizations for anyone interested in exploring health and fitness. How weight, calories, sleep, activities and their difficulty relate and impact each other. 
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.width = 8,
+  fig.height = 5    
+)
+```
+
+```{r setup}
+library(fitnessTracker)
+data("dailyActivity")
+data("dailySleep")
+data("dailyWeightLog")
+data("hourlyActivity")
+data("weekDaily")
+data("weightLog")
+
+library(ggplot2)
+library(ggthemes)
+library(ggridges)
+```
+
+Data:
+The data included in this package is multiple files ranging in datasets about sleep, activity, and weight. This datasource was found from kaggle, overall already cleaned. The dataset was cleaned again to make it more user friendly for the use of this project/package. 
+
+ dailyActivity: data containing activities, their intensity, and   calories burned
+```{r dailyActivity summary}
+head(dailyActivity)
+summary(dailyActivity)
+```
+
+ dailySleep: data containing sleep activity
+```{r dailySleep summary}
+head(dailySleep)
+summary(dailySleep)
+```
+
+ dailyWeightLog: data containing weight changes over time
+```{r dailyWeightLog summary}
+head(dailyWeightLog)
+summary(dailyWeightLog)
+```
+
+ hourlyActivity: data containing activities by the hour
+```{r hourlyActivity summary}
+head(hourlyActivity)
+summary(hourlyActivity)
+```
+
+ weekDaily: data containing activities by the week
+```{r weekDaily summary}
+head(weekDaily)
+summary(weekDaily)
+```
+
+ weightLog: data containing weight changes over including activities
+```{r weightLog summary}
+head(weightLog)
+summary(weightLog)
+```
+
+Functions:
+The functions included in this package cover data cleaning, analysis, and visualization. The data cleaning for this project is pre-done for this package and stores the usable files into the data folder.
+
+ Package File Function: displays raw files included in this package
+```{r Package File Function}
+package_files()
+```
+
+ BMR Function: calculates the Basal Metabolic Rate of a person based off their weight
+```{r BMR Function}
+BMR(dailyWeightLog$WeightPounds)
+```
+
+ TDEE Function: calculates Total Daily Energy Expenditure based on wweight and activity intensity level
+```{r TDEE Function}
+TDEE(weightLog$weight_pounds, weightLog$intensity_level)
+```
+
+Sleep Efficiency Function: calculates sleep effciency
+```{r Sleep Efficiency Function}
+sleep_efficiency(dailySleep$TotalMinutesAsleep, dailySleep$TotalTimeInBed)
+```
+
+ Water Intake Function: calculates recommended water intake for activities in ounces
+```{r Water Intake Function}
+water_intake(weightLog$weight_pounds, weightLog$intensity_level)
+```
+
+ Step Vs. Calorie Visualization: shows relationship between steps and calories burned
+```{r Steps Vs. Calories Plot}
+steps_vs_calories(dailyActivity, "TotalSteps", "Calories", "DailyIntensity", "activity_duration")
+```
+
+ Step Visualization:
+```{r Step Plot}
+steps_plot(dailyActivity, "ActivityDate", "TotalSteps")
+```
+
+ Sleep Visualization
+```{r Sleep Visualization}
+sleep_plot(dailySleep, "SleepDate", "TotalTimeInBed", "TotalMinutesAsleep", "TotalSleepRecords")
+```
+
+ Activity Intensity Visualization
+```{r Intensity Plot}
+intensity_plot(dailyActivity, "ActivityDate", "DailyIntensity", "intensity_level")
+```
+
+Summary:
+This package and its tools givers a beginner user friendly experience for data exploration and analysis for those interested in fitness and health. Enjoy!
