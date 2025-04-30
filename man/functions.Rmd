@@ -1,5 +1,0 @@
----
-title: "functions"
-output: html_document
----
-

@@ -12,3 +12,7 @@ list of files included in package
 \description{
 Lists files included in package
 }
+\examples{
+# display files included in this package
+package_files()
+}

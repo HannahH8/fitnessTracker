@@ -1,6 +1,6 @@
 #'Sleep visual plot
 #'
-#' @param data datset
+#' @param data dataset
 #' @param date data column in dataset
 #' @param timeInBed total time spent in bed
 #' @param TimeAsleep time asleep

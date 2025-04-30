@@ -2,7 +2,7 @@
 #'
 #' @param data dataset wanted for plot
 #' @param date date column of dataset
-#' @param date step count of dataset
+#' @param steps step count of dataset
 #' @return ggplot of steps over time
 #' @examples
 #' # Plot steps

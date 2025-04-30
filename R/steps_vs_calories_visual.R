@@ -6,7 +6,7 @@
 #' @param intensity optional: intensity of activity
 #' @param active_time optional: total time of activity
 #' @return plot visualization
-#' @example
+#' @examples
 #' # Steps vs. Calories Plot
 #' steps_vs_calories(dailyActivity, "TotalSteps", "Calories")
 #' @export
